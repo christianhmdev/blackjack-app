@@ -3,11 +3,11 @@
 </div>
 
 <div style="text-align: center;">
-  <div style="display: inline-block; text-align: left; padding: 0 20px; margin-bottom: 20px;">
+  <div style="display: inline-block; text-align: left; padding: 0 20px; margin-bottom: 50px;">
     <img src="https://res.cloudinary.com/ddmcwbdtl/image/upload/v1702719852/game-blackjack-home.png" alt="BlackJack Home" style="max-width: 100%;">
   </div>
   
-  <div style="display: inline-block; text-align: left; padding: 0 20px; margin-bottom: 20px;">
+  <div style="display: inline-block; text-align: left; padding: 0 20px; margin-bottom: 50px;">
     <img src="https://res.cloudinary.com/ddmcwbdtl/image/upload/v1702720017/game-blackjack-bet.png" alt="BlackJack Bet" style="max-width: 100%;">
   </div>
   
@@ -43,7 +43,7 @@
 
 Copy and paste the following command in your terminal to clone this repository:
 
-git clone: https://github.com/christianhmdev/blackjack-javascript.git
+git clone https://github.com/christianhmdev/blackjack-javascript.git
 
 ## How to play
 
