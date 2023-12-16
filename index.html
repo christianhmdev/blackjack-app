@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#004526">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <title>BlackJack</title>
+</head>
+
+<body>
+  <main>
+    <div id="settings-container">
+      <!-- start of settings-container div -->
+      <form name="settings" id="settings">
+        <div class="settings-section">
+          <p>Choose the number of decks:</p>
+          <input type="range" id="amountOfDecksInput" value="4" min="2" max="8" step="2"
+            oninput="output.value = amountOfDecksInput.value">
+          <output id="output">4</output>
+        </div>
+        <div class="settings-section">
+          <p>Choose deck color:</p>
+          <div>
+            <input type="radio" id="blue" name="deck-color" value="blue" checked>
+            <label for="blue"><img src="others/blue_back_mini.png" alt="blue"></label>
+          </div>
+          <div>
+            <input type="radio" id="red" name="deck-color" value="red">
+            <label for="red"><img src="others/red_back_mini.png" alt="red"></label>
+          </div>
+          <div>
+            <input type="radio" id="green" name="deck-color" value="green">
+            <label for="green"><img src="others/green_back_mini.png" alt="green"></label>
+          </div>
+          <br>
+          <div>
+            <input type="radio" id="yellow" name="deck-color" value="yellow">
+            <label for="yellow"><img src="others/yellow_back_mini.png" alt="yellow"></label>
+          </div>
+          <div>
+            <input type="radio" id="purple" name="deck-color" value="purple">
+            <label for="purple"><img src="others/purple_back_mini.png" alt="purple"></label>
+          </div>
+          <div>
+            <input type="radio" id="gray" name="deck-color" value="gray">
+            <label for="gray"><img src="others/gray_back_mini.png" alt="gray"></label>
+          </div>
+        </div>
+        <div class="settings-section">
+          <p>What is your name?</p>
+          <input type="text" id="player-name-input" name="player-name-input" value="Player">
+        </div>
+        <button id="play-btn">PLAY</button>
+      </form>
+    </div>
+    <!-- end of settings-container div -->
+    <div id="balance" class="hidden">
+      <div>Bank</div>
+      <span>$<span id="bank-balance">0</span></span>
+    </div>
+    <div id="betting-container" class="hidden">
+      <div id="bet-mid">
+        <button id="bet-btn" class="game-btn">BET</button>
+        <span id="currency-sign">$<span id="first-bet-placeholder">0</span></span>
+      </div>
+    </div>
+    <div id="game-over" class="hidden">
+      <p>Game Over</p>
+      <button id="restart-btn" class="game-btn">Restart</button>
+    </div>
+    <!-- start of round-container div -->
+    <div id="round-container" class="hidden">
+      <div class="remaining-cards">
+        <img src="others/remaining-cards.png" alt="remaining-cards"><br><span>0</span>
+      </div>
+      <span class="nick-name">Dealer</span>
+      <div class="dealerHand">
+        <div class="cards"></div>
+        <span id="dealer-score" class="score">0</span>
+        <div class="hidden" id="dealer-ribbon"></div>
+      </div>
+      <div id="round">
+        <button id="double-btn" class="chip">X2</button>
+        <span>$<span id="round-bet">0</span></span>
+      </div>
+      <div class="playerHand">
+        <div class="cards"></div>
+        <span id="player-score" class="score">0</span>
+        <div class="hidden" id="player-ribbon"></div>
+      </div>
+      <span id="player-name-output" class="nick-name">Player</span>
+    </div>
+    <!-- end of round-container div -->
+    <div id="dark-gradient-splash" class="hidden"></div>
+    <div id="fixed-bottom">
+      <div id="betting-fixed-bottom" class="hidden">
+        <div class="control-chips">
+          <button class="chip red">10</button>
+          <button class="chip orange">50</button>
+          <button class="chip light-blue">100</button>
+          <button class="chip purple">250</button>
+          <button class="chip dark-blue">500</button>
+        </div>
+        <button id="clear-btn" class="game-btn">CLEAR BET</button>
+        <button id="all-in-btn" class="game-btn">ALL IN</button>
+      </div>
+      <div id="round-fixed-bottom" class="hidden">
+        <button id="hit-btn" class="game-btn">HIT</button>
+        <button id="stand-btn" class="game-btn">STAND</button>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
