@@ -43,7 +43,9 @@
 
 Copy and paste the following command in your terminal to clone this repository:
 
+```
 git clone https://github.com/christianhmdev/blackjack-javascript.git
+```
 
 ## How to play
 
