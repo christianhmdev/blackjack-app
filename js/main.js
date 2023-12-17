@@ -69,7 +69,7 @@ function saveSettings(e) {
 
   deckColorInputEl.forEach((item) => {
     if (item.checked) {
-      hiddenCardBackImg.src = `others/${item.value}_back.png`
+      hiddenCardBackImg.src = `images/${item.value}_back.png`
     }
   })
 
@@ -280,7 +280,7 @@ function createCardElement(card) {
   const cardDiv = document.createElement("div")
   cardDiv.classList.add("card")
   const cardImg = document.createElement("img")
-  cardImg.src = `deck/${card}.png`
+  cardImg.src = `images/${card}.png`
   cardDiv.append(cardImg)
 
   return cardDiv
