@@ -23,7 +23,6 @@
 - [Tecnologies](#tecnologies)
 - [Configuration](#configuration)
 - [How to play](#how-to-play)
-- [Developer Information](#developer-information)
 
 ## Description
 
@@ -58,13 +57,3 @@ git clone https://github.com/christianhmdev/blackjack-javascript.git
 7. If you regret your bet, click Clear Bet.
 8. You can request a card by clicking 'Hit' or choose to stand.
 9. The player who reaches or gets close to 21 will win.
-
-## Developer Information
-
-Connect with me through the following links:
-
-- [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/christianhuamandev/)
-- [![Gmail](https://img.shields.io/badge/Gmail-red?logo=gmail)](mailto:christianhuamandev@gmail.com)
-- [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/christianhmdev/)
-
-
